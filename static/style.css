@@ -328,5 +328,8 @@ td {
     padding:16px;
     image-position:left;
     textarea-padding:15px;
+    text:cover;
+    textarea:cover;
+    color: #ffffff
 }
 
