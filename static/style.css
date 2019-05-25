@@ -296,3 +296,28 @@ td {
 
 /*--------------------------------------Bootstrap-------------------------*/
 
+.header-site{
+    background-image: url(/static/boot/5074.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 300px;
+    padding.bottom: 30px;
+}
+
+.content-site{
+    padding-top:200px;
+    padding-bottom: 200px;
+}
+.img-site{
+    background-image: url(/static/boot/5074.jpg);
+    background-position:center top;
+    background-repeat: no-repeat;
+    background.size: cover;
+    background-attachment: fixed;
+    padding-top:200px;
+    padding-bottom:200px;
+    color: #ffffff
+}
