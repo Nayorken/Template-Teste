@@ -327,5 +327,6 @@ td {
 .sobre-site{
     padding:16px;
     image-position:left;
-    h1-position:center;
+    textarea-padding:15px;
 }
+
