@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+{% block titulo %}
+<title>Criar Nova Conta</title>
+{% endblock %}
+
+{% block conteudo %}
+<body background="/static/background/tt1.gif">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form method="post">
+    <fieldset>
+        <h4>Utilizador</h4>
+        <input type="text" name="utilizador" required>
+        <p><br></p>
+        <h4>Endereço de Email</h4>
+        <input type="text" name="email" required>
+        <p><br></p>
+        <h4>Palavra-Passe</h4>
+        <input type="password" name="passe" required>
+        <p><br></p>
+        <h4>Confirme a Passe</h4>
+        <input type="password" name="cpasse" required>
+        <p><br></p>
+        <button class="btn btn-one">Registar</button>
+    </fieldset>
+</form>
+{% if erro %}<h4>{{ erro }}</h4>{% endif %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
