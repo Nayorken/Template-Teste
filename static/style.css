@@ -321,3 +321,11 @@ td {
     padding-bottom:200px;
     color: #ffffff
 }
+
+/*--------------------------------------sobre---------------------------------*/
+
+.sobre-site{
+    padding:16px;
+    image-position:left;
+    h1-position:center;
+}
