@@ -1,34 +1,29 @@
 {% extends 'layout.html' %}
 {% block titulo %}
-<title>Iniciar Sessão</title>
+<meta charset="UTF-8">
+<title>Title</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
 {% endblock %}
-
-
 
 {% block conteudo %}
 <body background="/static/background/tt1.gif">
-<link href="/static/style.css">
-<br>
-<br>
-<form method="post">
-    <fieldset>
-        <h4>Utilizador</h4>
-        <input type="text" name="utilizador" required>
+<div class="login-box">
+    <img src="static/imm/avatar.png" class="avatar">
+    <form method="post">
+        <h3>Utilizador</h3>
+        <input type="text" name="usr" required>
+        <h3>Introduza a Palavra-Passe</h3>
+        <input type="password" name="pwd" required>
         <p><br></p>
-        <h4>Palavra-Passe</h4>
-        <input type="password" name="passe" required>
-        <a href="/registo">Não tem conta crie já a sua!</a>
+        <input type="submit" value="Entrar">
+        <a href="newpass">Alterar Password</a><br>
+        <a href="apagar">Eliminar Conta</a>
         <p><br></p>
-        <button class="btn btn-one">Iniciar Sessão</button>
+        {% if erro %}<h1>{{ erro }}</h1>{% endif %}
+    </form>
+</div>
 
-    </fieldset>
-</form>
 
-{% if erro %}<h4>{{ erro }}</h4>{% endif %}
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+</body>
+
 {% endblock %}

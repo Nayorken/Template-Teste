@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% block titulo %}
+<meta charset="UTF-8">
+<title>Title</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+{% endblock %}
+
+{% block conteudo %}
+<body background="/static/background/tt1.gif">
+<div class="login-box">
+    <form method="post">
+        <img src="static/imm/avatar.png" class="avatar">
+        <h4>Utilizador</h4>
+        <input type='text' name="usr" required>
+        <h4>Nova Palavra-Passe</h4>
+        <input type='password' name="pwd" required>
+        <h4>Confirme a Passe</h4>
+        <input type='password' name="cpwd" required>
+        <p><br></p>
+        <input type="submit" value="Submeter">
+        {% if erro %}
+        <h2>{{ erro }}</h2>
+        {% endif %}
+    </form>
+</div>
+</body>
+{% endblock %}
